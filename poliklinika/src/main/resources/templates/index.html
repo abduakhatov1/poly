@@ -1,0 +1,475 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clinic</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicons
+        ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+    <!-- Stylesheet
+        ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand page-scroll" href="#page-top">Клиника Eva</a> </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#features" class="page-scroll">особенности</a></li>
+                <li><a href="#about" class="page-scroll">О нас</a></li>
+                <li><a href="#services" class="page-scroll">Сервис</a></li>
+                <li><a href="#portfolio" class="page-scroll">Галлерея</a></li>
+                <li><a href="#testimonials" class="page-scroll">Комментарии</a></li>
+                <li><a href="#team" class="page-scroll">Команда</a></li>
+                <li><a href="#contact" class="page-scroll">Контакт & Вход</a></li>
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+<!-- Header -->
+<header id="header">
+    <div class="intro">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 intro-text">
+                        <h1>Вместе к здоровью!<span></span></h1>
+                        <p>Выбирая нас, вы получаете честную и качественную медицинскую помощь!</p>
+                        <a href="#features" class="btn btn-custom btn-lg page-scroll">Узнай нас лучше </a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Features Section -->
+<div id="features" class="text-center">
+    <div class="container">
+        <div class="col-md-10 col-md-offset-1 section-title">
+            <h2>Особенности</h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-3"> <i class="fa fa-comments-o"></i>
+                <h3>Профилактический медицинский осмотр</h3>
+                <p>активное медицинское обследование определенных групп населения врачами одной или нескольких специальностей и проведение лабораторно-диагностических исследований с целью раннего выявления заболеваний и осуществления, необходимых лечебно-оздоровительных мероприятий..</p>
+            </div>
+            <div class="col-xs-6 col-md-3"> <i class="fa fa-bullhorn"></i>
+                <h3>Прафилактика</h3>
+                <p>проведение лечебно-профилактической работы среди сотрудников по сохранению и укреплению здоровья, профилактике профзаболеваний.</p>
+            </div>
+            <div class="col-xs-6 col-md-3"> <i class="fa fa-group"></i>
+                <h3>Мы за здаровый образ жизны</h3>
+                <p>формирование и пропаганда здорового  образа  жизни</p>
+            </div>
+            <div class="col-xs-6 col-md-3"> <i class="fa fa-magic"></i>
+                <h3>Платные услуги</h3>
+                <p>консультации ведущих областных специалистов по 27 врачебным специальностям, а также стоматологические услуги.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6"> <img src="img/about_1.jpg" class="img-responsive" alt=""> </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="about-text">
+                    <h2>О НАС</h2>
+                    <p>Медицинские услуги в наших клиниках осуществляются только высококвалифицированными медицинскими специалистами, имеющими опыт стажировки и работы в ведущих клиниках мира и практику участия в международных научно-исследовательских программах.</p>
+                    <h3>Почему нужно выбрать нас?</h3>
+                    <div class="list-style">
+                        <div class="col-lg-6 col-sm-6 col-xs-12">
+                            <ul>
+                                <li>Забота о каждом пациенте.</li>
+                                <li>С заботой о вашем здоровье.</li>
+                                <li>Квалифицированная помощь.</li>
+                                <li>МЫ ЗА ЗДОРОВЬЕ - БЕЗ ГРАНИЦ!</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-xs-12">
+                            <ul>
+                                <li>Только мы знаем Вас лучше Вас самой.</li>
+                                <li>Мы отвечаем за результат.</li>
+                                <li>Необычная клиника для обычных людей.</li>
+                                <li>Лечим с любовью!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services Section -->
+<div id="services" class="text-center">
+    <div class="container">
+        <div class="section-title">
+            <h2>Наши услуги</h2>
+            <p>Мы предаставляем для своих Пациентов следуюшие услуги.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4"> <i class="fa fa-wordpress"></i>
+                <div class="service-desc">
+                    <h3>УЛЬТРАЗУВУКОВАЯ ДИАГНОСТИКА.</h3>
+                    <p>УЗИ органов брюшной полости, мочеполовой системы и других органов..</p>
+                </div>
+            </div>
+            <div class="col-md-4"> <i class="fa fa-cart-arrow-down"></i>
+                <div class="service-desc">
+                    <h3>Консультации врачей- специалистов</h3>
+                    <p>консультации специалистов (хирург, отоларинголог, офтальмолог, невролог, эндокринолог).</p>
+                </div>
+            </div>
+            <div class="col-md-4"> <i class="fa fa-cloud-download"></i>
+                <div class="service-desc">
+                    <h3>РЕНТГЕН ДИАГНОСТИКА.</h3>
+                    <p>Рентгенография, флюорография, маммография..</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"> <i class="fa fa-language"></i>
+                <div class="service-desc">
+                    <h3>Лабораторная диагностика</h3>
+                    <p> Биохимические исследования крови: - холестерин и липидный спектр, кальций, железо креатинин, мочевина, общий белок, билирубин, АСТ, АЛТ, лактат дегтдрогеназа, щелочная фосфатаза.</p>
+                </div>
+            </div>
+            <div class="col-md-4"> <i class="fa fa-plane"></i>
+                <div class="service-desc">
+                    <h3>КОМПЬЮТЕРНАЯ ТОМОГРАФИЯ.</h3>
+                    <p>КТ исследования органов грудной клетки, черепа, позвоночника, костей..</p>
+                </div>
+            </div>
+            <div class="col-md-4"> <i class="fa fa-pie-chart"></i>
+                <div class="service-desc">
+                    <h3>ВАКЦИНАЦИЯ против ГРИППА на ПЛАТНОЙ ОСНОВЕ</h3>
+                    <p>«Ваксигрипп», Санофи Пастер, Франция.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Gallery Section -->
+<div id="portfolio" class="text-center">
+    <div class="container">
+        <div class="section-title">
+            <h2>Галлерея</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+        </div>
+        <div class="row">
+            <div class="portfolio-items">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Lorem Ipsum</h4>
+                            </div>
+                            <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Adipiscing Elit</h4>
+                            </div>
+                            <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Lorem Ipsum</h4>
+                            </div>
+                            <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Lorem Ipsum</h4>
+                            </div>
+                            <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Adipiscing Elit</h4>
+                            </div>
+                            <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Dolor Sit</h4>
+                            </div>
+                            <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Dolor Sit</h4>
+                            </div>
+                            <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Lorem Ipsum</h4>
+                            </div>
+                            <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                                <h4>Adipiscing Elit</h4>
+                            </div>
+                            <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonials Section -->
+<div id="testimonials">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>Отзывы наших клиентов</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <div class="testimonial-image"> <img src="img/testimonials/01.jpg" alt=""> </div>
+                    <div class="testimonial-content">
+                        <p>"Спасибо вам огромное, вы просто замечательный доктор, и очень мне помогли !"</p>
+                        <div class="testimonial-meta"> - John Doe </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <div class="testimonial-image"> <img src="img/testimonials/02.jpg" alt=""> </div>
+                    <div class="testimonial-content">
+                        <p>"Огромная благодарность Быкову Андрей  Евгеньевичу за профессионализм, внимательное и терпеливое отношение. Здоровья, успехов в работе и адекватных пациентов."</p>
+                        <div class="testimonial-meta"> - Johnathan Doe </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <div class="testimonial-image"> <img src="img/testimonials/03.jpg" alt=""> </div>
+                    <div class="testimonial-content">
+                        <p>" Все просто замечательно! От персонала до стен! Ну правда пушка!"</p>
+                        <div class="testimonial-meta"> - John Doe </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row"> </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <div class="testimonial-image"> <img src="img/testimonials/04.jpg" alt=""> </div>
+                    <div class="testimonial-content">
+                        <p>"Внимательны врачи, культурное обслуживание. Спасибо что вы есть."</p>
+                        <div class="testimonial-meta"> - Johnathan Doe </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <div class="testimonial-image"> <img src="img/testimonials/05.jpg" alt=""> </div>
+                    <div class="testimonial-content">
+                        <p>"Попал на УЗИ в Eva clinic, вот где специалисты работают!!! Отличная клиника высокого европейского уровня. Респект руководству!"</p>
+                        <div class="testimonial-meta"> - John Doe </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial">
+                    <div class="testimonial-image"> <img src="img/testimonials/06.jpg" alt=""> </div>
+                    <div class="testimonial-content">
+                        <p>"Была в Ева Клиник первый раз, очень довольна персоналом, обстановкой, уютно, комфортно. Приветливый и вежливый персонал. Отдельное спасибо Силуяновой В. В. Очень внимательная и грамотный врач."</p>
+                        <div class="testimonial-meta"> - Johnathan Doe </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team Section -->
+<div id="team" class="text-center">
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2 section-title">
+            <h2>Наш Коллектив</h2>
+            <p>Наши сотрудники профессионалы своего дела.</p>
+        </div>
+        <div id="row">
+            <div class="col-md-3 col-sm-6 team">
+                <div class="thumbnail"> <img src="img/team/1.jpg" alt="..." class="team-img">
+                    <div class="caption">
+                        <h4>Андрей Евгеньевич Быков</h4>
+                        <p>ВРАЧ-АНЕСТЕЗИОЛОГ-РЕАНИМАТОЛОГ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 team">
+                <div class="thumbnail"> <img src="img/team/2.jpg" alt="..." class="team-img">
+                    <div class="caption">
+                        <h4>Борис Аркадьевич Левин</h4>
+                        <p>ВРАЧ-КАРДИОЛОГ </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 team">
+                <div class="thumbnail"> <img src="img/team/3.jpg" alt="..." class="team-img">
+                    <div class="caption">
+                        <h4>Анастасия Константиновна Кисегач</h4>
+                        <p>ГЛАВНЫЙ ВРАЧ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 team">
+                <div class="thumbnail"> <img src="img/team/44.jpg" alt="..." class="team-img">
+                    <div class="caption">
+                        <h4>Варвара Николаевна Черноус</h4>
+                        <p>ВРАЧ-ТЕРАПЕВТ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact Section -->
+<div id="contact">
+    <div class="container">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Get In Touch</h2>
+                    <p>Please fill out the form below to send us an email and we will get back to you as soon as possible.</p>
+                </div>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-3 col-md-offset-1 contact-info">
+            <div class="contact-item">
+                <h3>Contact Info</h3>
+                <p><span><i class="fa fa-map-marker"></i> Address</span>Republic of Uzbekistan <br>
+                    Samarkand city</p>
+            </div>
+            <div class="contact-item">
+                <p><span><i class="fa fa-phone"></i> Phone</span> +375 25 753 80 54</p>
+            </div>
+            <div class="contact-item">
+                <p><span><i class="fa fa-envelope-o"></i> Email</span>gakhatov@mail.ru</p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="social">
+                    <ul>
+                        <li><a th:href="@{/register}"><i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
+                        <li><a th:href="@{/login}"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer Section -->
+<div id="footer">
+    <div class="container text-center">
+            <p>&copy; 2017 Interact. Design by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/nivo-lightbox.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>>
